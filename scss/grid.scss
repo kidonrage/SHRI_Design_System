@@ -1,0 +1,66 @@
+.grid {
+
+  display: grid;
+
+  &_m-columns {
+
+    &_12 {
+      column-count: 12;
+    }
+    &_10 {
+      column-count: 10;
+    }
+
+  }
+
+  &_col-gap {
+
+    &_two-thirds {
+      column-gap: calc(var(--gap) / 3 * 2);
+    }
+    &_full {
+      column-gap: var(--gap);
+    }
+    &_half {
+      column-gap: calc(var(--gap) / 2);
+    }
+
+  }
+
+  &_row-gap {
+
+    &_full {
+      row-gap: var(--gap);
+    }
+    &_half {
+      row-gap: calc(var(--gap) / 2);
+    }
+
+  }
+
+
+  &__fraction {
+
+    &_m-col {
+
+      &_2 {
+        grid-column: span 2;
+      }
+      &_3 {
+        grid-column: span 3;
+      }
+      &_4 {
+        grid-column: span 4;
+      }
+      &_5 {
+        grid-column: span 5;
+      }
+      &_8 {
+        grid-column: span 8;
+      }
+
+    }
+
+  }
+
+}

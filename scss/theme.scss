@@ -1,0 +1,114 @@
+.theme {
+
+  /*--Цвета всех элементов интерфейса--*/
+  &_color {
+
+    &_project {
+      &-default {
+        /* Значения фонов блоков: */
+        --default: #FFFFFF;
+        --accent: #ffcc00;
+        --border: #000000;
+
+        /* Значения состояний текста: */
+        --main: #000000;
+        --secondary: rgba(0, 0, 0, 0.6);
+        --extra: rgba(0, 0, 0, 0.3);
+        --link: #0077ff;
+      }
+
+      &-brand {
+        /* Значения фонов блоков: */
+        --default: #0077ff;
+        --accent: #FFFFFF;
+        --border: #FFFFFF;
+      
+        /* Значения состояний текста: */
+        --main: #FFFFFF;
+        --secondary: rgba(255, 255, 255, 0.6);
+        --extra: rgba(255, 255, 255, 0.3);
+        --link: #FFFFFF;
+      }
+
+      &-inverse {
+        /* Значения фонов блоков: */
+        --default: #000000;
+        --accent: #FFFFFF;
+        --border: #FFFFFF;
+      
+        /* Значения состояний текста: */
+        --main: #FFFFFF;
+        --secondary: rgba(255, 255, 255, 0.6);
+        --extra: rgba(255, 255, 255, 0.3);
+        --link: #0077ff;
+      }
+
+      &-warning {
+        /* Значения фонов блоков: */
+        --default: #ff3333;
+        --accent: #FFFFFF;
+        --border: #ff3333;
+      
+        /* Значения состояний текста: */
+        --main: #FFFFFF;
+        --secondary: rgba(255, 255, 255, 0.6);
+        --extra: rgba(255, 255, 255, 0.3);
+        --link: #FFF;
+      }      
+    }
+
+  }
+
+  /*--Размеры типографических величин--*/
+  &_size {
+
+    &_default {
+      /* Значения размеров высоты текста (так как в задании текст в виде линий) */
+      --text-height-s: 8px;
+      --text-height-m: 10px;
+      --text-height-l: 11px;
+      --text-height-xl: 13px;
+      --text-height-xxl: 16px;
+
+      /* Значения межстрочных интервалов */
+      --line-height-s: 21px;
+      --line-height-m: 25px;
+      --line-height-l: 28px;
+      --line-height-xl: 34px;
+      --line-height-xxl: 38px;
+    }
+
+  }
+
+  /*--Размеры отступов между элементами интерфейса--*/
+  &_space {
+
+    &_default {
+      --indent-xxxs: 3px;
+      --indent-xxs: 6px;
+      --indent-xs: 9px;
+      --indent-s: 15px;
+      --indent-m: 18px;
+      --indent-l: 24px;
+      --indent-xl: 27px;
+      --indent-xxl: 36px;
+      --indent-xxxl: 45px;
+      --indent-xxxxl: 51px;
+      --indent-xxxxxl: 72px;
+    }
+
+  }
+
+  &_gap {
+
+    &_small {
+      --gap: var(--indent-xl);
+
+      @media (max-width: 1024px) {
+        --gap: var(--indent-s); 
+      }
+    }
+
+  }
+
+}

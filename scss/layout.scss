@@ -1,0 +1,50 @@
+.layout {
+
+  &__container {
+
+    &_align {
+
+      &_center {
+        margin: 0 auto;
+      }
+
+    }
+
+    &_size {
+
+      &_s {
+        max-width: 920px;
+      }
+
+      &_m {
+        max-width: 1280px;
+      }
+
+    }
+
+    &_space-v	{
+
+      &_xxxxl {
+        padding-top: var(--indent-xxxxl)
+      }
+
+      &_xxxxxl {
+        padding-top: var(--indent-xxxxxl)
+      }
+
+    }
+
+    &_indent-b {
+
+      &_xxl {
+        padding-top: var(--indent-xxl)
+      }
+
+      &_xxxxl {
+        padding-top: var(--indent-xxxxl)
+      }
+    }
+
+  }
+
+}
