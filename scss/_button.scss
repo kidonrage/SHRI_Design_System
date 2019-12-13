@@ -1,0 +1,37 @@
+@mixin buttonSize($height) {
+  height: $height;
+  width: 200px;
+}
+
+.button {
+  background-color: var(--accent);
+
+  &_size {
+
+    &_s {
+      @include buttonSize(24px);
+    }
+    &_m {
+      @include buttonSize(32px);
+    }
+    &_l {
+      @include buttonSize(42px);
+    }
+    &_xl {
+      @include buttonSize(56px);
+    }
+    &_xxl {
+      @include buttonSize(64px);
+    }
+
+  }
+
+  &_width {
+
+    &_full {
+      width: 100%;
+    }
+
+  }
+
+}
