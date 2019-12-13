@@ -1,0 +1,194 @@
+.form {
+
+  &_border {
+
+    &_all {
+      border: 3px solid var(--border);
+    }
+
+  }
+
+  &_view {
+   
+    &_default {
+      background-color: var(--default);
+    }
+
+  }
+
+
+
+  &__item {
+    display: flex;
+
+    &_border {
+
+      &_bottom {
+        border-bottom: 3px solid var(--border);
+      }
+
+    }
+
+    &_distribute {
+
+      &_between {
+        justify-content: space-between;
+      }
+
+    }
+
+    &_vertical-align {
+
+      &_center {
+        align-items: center;
+      }
+
+    }
+
+    &_indent-b {
+
+      &_xxxs {
+        margin-bottom: var(--indent-xxxs);
+      }
+      &_xxs {
+        margin-bottom: var(--indent-xxs);
+      }
+      &_s {
+        margin-bottom: var(--indent-s);
+      }
+      &_m {
+        margin-bottom: var(--indent-m);
+      }
+      &_l {
+        margin-bottom: var(--indent-l);
+      }
+      &_xl {
+        margin-bottom: var(--indent-xl);
+      }
+      &_xxl {
+        margin-bottom: var(--indent-xxl);
+      }
+      &_xxxl {
+        margin-bottom: var(--indent-xxxl);
+      }
+      &_xxxxl {
+        margin-bottom: var(--indent-xxxxl);
+      }
+
+    }
+
+    &_space-h {
+
+      &_xxxs {
+        padding-right: var(--indent-xxxs);
+        padding-left: var(--indent-xxxs);
+      }
+      &_xxs {
+        padding-right: var(--indent-xxs);
+        padding-left: var(--indent-xxs);
+      }
+      &_s {
+        padding-right: var(--indent-s);
+        padding-left: var(--indent-s);
+      }
+      &_m {
+        padding-right: var(--indent-m);
+        padding-left: var(--indent-m);
+      }
+      &_l {
+        padding-right: var(--indent-l);
+        padding-left: var(--indent-l);
+      }
+      &_xl {
+        padding-right: var(--indent-xl);
+        padding-left: var(--indent-xl);
+      }
+      &_xxl {
+        padding-right: var(--indent-xxl);
+        padding-left: var(--indent-xxl);
+      }
+      &_xxxl {
+        padding-right: var(--indent-xxxl);
+        padding-left: var(--indent-xxxl);
+      }
+      &_xxxxl {
+        padding-right: var(--indent-xxxxl);
+        padding-left: var(--indent-xxxxl);
+      }
+
+    }
+
+    &_space-v {
+
+      &_xxxs {
+        padding-top: var(--indent-xxxs);
+        padding-bottom: var(--indent-xxxs);
+      }
+      &_xxs {
+        padding-top: var(--indent-xxs);
+        padding-bottom: var(--indent-xxs);
+      }
+      &_s {
+        padding-top: var(--indent-s);
+        padding-bottom: var(--indent-xxs);
+      }
+      &_m {
+        padding-top: var(--indent-m);
+        padding-bottom: var(--indent-xxs);
+      }
+      &_l {
+        padding-top: var(--indent-l);
+        padding-bottom: var(--indent-xxs);
+      }
+      &_xl {
+        padding-top: var(--indent-xl);
+        padding-bottom: var(--indent-xxs);
+      }
+      &_xxl {
+        padding-top: var(--indent-xxl);
+        padding-bottom: var(--indent-xxs);
+      }
+      &_xxxl {
+        padding-top: var(--indent-xxxl);
+        padding-bottom: var(--indent-xxs);
+      }
+      &_xxxxl {
+        padding-top: var(--indent-xxxxl);
+        padding-bottom: var(--indent-xxs);
+      }
+
+      .form__item & {
+        &[class^=form__item_border] {
+          border-bottom: none;
+        }
+      }
+
+
+    }
+
+    
+    &__space-v {
+      border-bottom: none;
+    }
+    
+  }
+
+  &__label {
+
+    &_width {
+
+      &_default {
+        width: 35%;
+      }
+
+    }
+    
+  }
+
+  &__control {
+
+    
+    
+  }
+
+}

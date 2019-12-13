@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "watch-scss": "",
-    "start": "node-sass scss/style.scss --watch --recursive --output build & node index.js"
+    "start": "node-sass scss --watch --recursive --output build & node index.js"
   },
   "author": "",
   "license": "ISC",

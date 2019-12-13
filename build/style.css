@@ -99,11 +99,12 @@
   padding-top: var(--indent-xxxxl); }
 
 .grid {
-  display: grid; }
+  display: grid;
+  grid-template-rows: auto; }
   .grid_m-columns_12 {
-    column-count: 12; }
+    grid-template-columns: repeat(12, 1fr); }
   .grid_m-columns_10 {
-    column-count: 10; }
+    grid-template-columns: repeat(10, 1fr); }
   .grid_col-gap_two-thirds {
     column-gap: calc(var(--gap) / 3 * 2); }
   .grid_col-gap_full {
@@ -111,8 +112,10 @@
   .grid_col-gap_half {
     column-gap: calc(var(--gap) / 2); }
   .grid_row-gap_full {
+    grid-row-gap: var(--gap);
     row-gap: var(--gap); }
   .grid_row-gap_half {
+    grid-row-gap: calc(var(--gap) / 2);
     row-gap: calc(var(--gap) / 2); }
   .grid__fraction_m-col_2 {
     grid-column: span 2; }
@@ -126,7 +129,7 @@
     grid-column: span 8; }
 
 .card_border_all {
-  border: 2px solid var(--border); }
+  border: 3px solid var(--border); }
 
 .card_view_default {
   background-color: var(--default); }
@@ -168,3 +171,183 @@
     padding: var(--indent-xl); }
   .card__footer_space-a_xxxl {
     padding: var(--indent-xxxl); }
+
+.form_border_all {
+  border: 3px solid var(--border); }
+
+.form_view_default {
+  background-color: var(--default); }
+
+.form__item {
+  display: flex; }
+  .form__item_border_bottom {
+    border-bottom: 3px solid var(--border); }
+  .form__item_distribute_between {
+    justify-content: space-between; }
+  .form__item_vertical-align_center {
+    align-items: center; }
+  .form__item_indent-b_xxxs {
+    margin-bottom: var(--indent-xxxs); }
+  .form__item_indent-b_xxs {
+    margin-bottom: var(--indent-xxs); }
+  .form__item_indent-b_s {
+    margin-bottom: var(--indent-s); }
+  .form__item_indent-b_m {
+    margin-bottom: var(--indent-m); }
+  .form__item_indent-b_l {
+    margin-bottom: var(--indent-l); }
+  .form__item_indent-b_xl {
+    margin-bottom: var(--indent-xl); }
+  .form__item_indent-b_xxl {
+    margin-bottom: var(--indent-xxl); }
+  .form__item_indent-b_xxxl {
+    margin-bottom: var(--indent-xxxl); }
+  .form__item_indent-b_xxxxl {
+    margin-bottom: var(--indent-xxxxl); }
+  .form__item_space-h_xxxs {
+    padding-right: var(--indent-xxxs);
+    padding-left: var(--indent-xxxs); }
+  .form__item_space-h_xxs {
+    padding-right: var(--indent-xxs);
+    padding-left: var(--indent-xxs); }
+  .form__item_space-h_s {
+    padding-right: var(--indent-s);
+    padding-left: var(--indent-s); }
+  .form__item_space-h_m {
+    padding-right: var(--indent-m);
+    padding-left: var(--indent-m); }
+  .form__item_space-h_l {
+    padding-right: var(--indent-l);
+    padding-left: var(--indent-l); }
+  .form__item_space-h_xl {
+    padding-right: var(--indent-xl);
+    padding-left: var(--indent-xl); }
+  .form__item_space-h_xxl {
+    padding-right: var(--indent-xxl);
+    padding-left: var(--indent-xxl); }
+  .form__item_space-h_xxxl {
+    padding-right: var(--indent-xxxl);
+    padding-left: var(--indent-xxxl); }
+  .form__item_space-h_xxxxl {
+    padding-right: var(--indent-xxxxl);
+    padding-left: var(--indent-xxxxl); }
+  .form__item_space-v_xxxs {
+    padding-top: var(--indent-xxxs);
+    padding-bottom: var(--indent-xxxs); }
+  .form__item_space-v_xxs {
+    padding-top: var(--indent-xxs);
+    padding-bottom: var(--indent-xxs); }
+  .form__item_space-v_s {
+    padding-top: var(--indent-s);
+    padding-bottom: var(--indent-xxs); }
+  .form__item_space-v_m {
+    padding-top: var(--indent-m);
+    padding-bottom: var(--indent-xxs); }
+  .form__item_space-v_l {
+    padding-top: var(--indent-l);
+    padding-bottom: var(--indent-xxs); }
+  .form__item_space-v_xl {
+    padding-top: var(--indent-xl);
+    padding-bottom: var(--indent-xxs); }
+  .form__item_space-v_xxl {
+    padding-top: var(--indent-xxl);
+    padding-bottom: var(--indent-xxs); }
+  .form__item_space-v_xxxl {
+    padding-top: var(--indent-xxxl);
+    padding-bottom: var(--indent-xxs); }
+  .form__item_space-v_xxxxl {
+    padding-top: var(--indent-xxxxl);
+    padding-bottom: var(--indent-xxs); }
+  .form__item .form__item_space-v[class^=form__item_border] {
+    border-bottom: none; }
+  .form__item__space-v {
+    border-bottom: none; }
+
+.form__label_width_default {
+  width: 35%; }
+
+.informer_border_all {
+  border: 3px solid var(--border); }
+
+.informer_view_default {
+  background-color: var(--default); }
+
+.informer__content_distribute {
+  display: flex; }
+  .informer__content_distribute_between {
+    justify-content: space-between; }
+  .informer__content_distribute_center {
+    justify-content: center; }
+
+.informer__content_space-a_xl {
+  padding: var(--indent-xl); }
+
+.informer__content_space-a_xxl {
+  padding: var(--indent-xxl); }
+
+.list_border_all {
+  border: 3px solid var(--border); }
+
+.list_view_default {
+  background-color: var(--default); }
+
+.list__item_border_bottom {
+  border-bottom: 3px solid var(--border); }
+
+.list__item_border_top {
+  border-top: 3px solid var(--border); }
+
+.list__item_distribute_between {
+  justify-content: space-between; }
+
+.list__item_vertical-align_center {
+  align-items: center; }
+
+.list__item_indent-t_m {
+  margin-top: var(--indent-m); }
+
+.list__item_indent-b_s {
+  margin-bottom: var(--indent-s); }
+
+.list__item_indent-b_m {
+  margin-bottom: var(--indent-m); }
+
+.list__item_indent-b_l {
+  margin-bottom: var(--indent-l); }
+
+.list__item_indent-b_xl {
+  margin-bottom: var(--indent-xl); }
+
+.list__item_space-b_s {
+  padding-bottom: var(--indent-s); }
+
+.list__item_space-a_m {
+  padding: var(--indent-m); }
+
+.icon-plus_vertical-align {
+  display: flex; }
+  .icon-plus_vertical-align_center {
+    align-items: center; }
+
+.icon-plus__icon_indent-r_s {
+  margin-right: var(--indent-s); }
+
+.icon-plus__icon_indent-r_m {
+  margin-right: var(--indent-m); }
+
+.icon-plus__icon_indent-l_l {
+  margin-left: var(--indent-l); }
+
+.section_indent-b_xxl {
+  margin-bottom: var(--indent-xxl); }
+
+.section_indent-b_xxxxl {
+  margin-bottom: var(--indent-xxxxl); }
+
+.section_indent-b_space-v_xxl {
+  padding-top: var(--indent-xxl);
+  padding-bottom: var(--indent-xxl); }
+
+.section_indent-b_space-v_xxxxl {
+  padding-top: var(--indent-xxxxl);
+  padding-bottom: var(--indent-xxxxl); }

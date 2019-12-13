@@ -1,14 +1,14 @@
 .grid {
-
   display: grid;
+  grid-template-rows: auto;
 
   &_m-columns {
 
     &_12 {
-      column-count: 12;
+      grid-template-columns: repeat(12, 1fr);
     }
     &_10 {
-      column-count: 10;
+      grid-template-columns: repeat(10, 1fr);
     }
 
   }
@@ -30,9 +30,11 @@
   &_row-gap {
 
     &_full {
+      grid-row-gap: var(--gap);
       row-gap: var(--gap);
     }
     &_half {
+      grid-row-gap: calc(var(--gap) / 2);
       row-gap: calc(var(--gap) / 2);
     }
 
