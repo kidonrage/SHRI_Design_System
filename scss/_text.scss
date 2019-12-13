@@ -38,23 +38,18 @@
   &_size {
 
     &_s {
-      height: var(--text-height-s);
       @include wordSize(20px, 48px, 100px, 8px)
     }
     &_m {
-      height: var(--text-height-m);
       @include wordSize(24px, 56px, 114px, 10px)
     }
     &_l {
-      height: var(--text-height-l);
       @include wordSize(28px, 68px, 138px, 11px)
     }
     &_xl {
-      height: var(--text-height-xl);
       @include wordSize(32px, 74px, 154px, 13px)
     }
     &_xxl {
-      height: var(--text-height-xxl);
       @include wordSize(36px, 88px, 184px, 16px)
     }
 
