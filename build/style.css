@@ -367,20 +367,6 @@
 .list__item_space-a_m {
   padding: var(--indent-m); }
 
-.icon-plus_vertical-align {
-  display: flex; }
-  .icon-plus_vertical-align_center {
-    align-items: center; }
-
-.icon-plus__icon_indent-r_s {
-  margin-right: var(--indent-s); }
-
-.icon-plus__icon_indent-r_m {
-  margin-right: var(--indent-m); }
-
-.icon-plus__icon_indent-l_l {
-  margin-left: var(--indent-l); }
-
 .section_indent-b_xxl {
   margin-bottom: var(--indent-xxl); }
 
@@ -394,6 +380,20 @@
 .section_indent-b_space-v_xxxxl {
   padding-top: var(--indent-xxxxl);
   padding-bottom: var(--indent-xxxxl); }
+
+.icon-plus_vertical-align {
+  display: flex; }
+  .icon-plus_vertical-align_center {
+    align-items: center; }
+
+.icon-plus__icon_indent-r_s {
+  margin-right: var(--indent-s); }
+
+.icon-plus__icon_indent-r_m {
+  margin-right: var(--indent-m); }
+
+.icon-plus__icon_indent-l_l {
+  margin-left: var(--indent-l); }
 
 .text_align_center {
   text-align: center; }
@@ -560,3 +560,8 @@
     height: 56px; }
   .input_size_xxl {
     height: 64px; }
+
+.image {
+  border: 3px solid var(--border);
+  width: 100%;
+  background-image: url(); }
