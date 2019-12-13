@@ -1,5 +1,6 @@
 @mixin wordSize($s, $m, $l, $height) {
   .text__word {
+    display: inline-block;
     height: $height;
 
     &_width {
@@ -26,13 +27,11 @@
 }
 
 .text {
-  display: flex;
-  flex-flow: column;
 
   &_align {
 
     &_center {
-      align-items: center;
+      text-align: center;
     }
 
   }
@@ -40,18 +39,23 @@
   &_size {
 
     &_s {
+      line-height: var(--line-height-s);
       @include wordSize(20px, 48px, 100px, 8px)
     }
     &_m {
+      line-height: var(--line-height-m);
       @include wordSize(24px, 56px, 114px, 10px)
     }
     &_l {
+      line-height: var(--line-height-l);
       @include wordSize(28px, 68px, 138px, 11px)
     }
     &_xl {
+      line-height: var(--line-height-xl);
       @include wordSize(32px, 74px, 154px, 13px)
     }
     &_xxl {
+      line-height: var(--line-height-xxl);
       @include wordSize(36px, 88px, 184px, 16px)
     }
 

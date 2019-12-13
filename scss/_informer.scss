@@ -19,17 +19,17 @@
 
 
 
-  &__content {
+  &__content, &__action {
+    display: flex;
+    flex-flow: column;
 
     &_distribute {
 
-      display: flex;
-
       &_between {
-        justify-content: space-between;
+        align-items: space-between;
       }
       &_center {
-        justify-content: center;
+        align-items: center;
       }
 
     }
