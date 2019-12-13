@@ -1,6 +1,5 @@
 .image {
   border: 3px solid var(--border-color);
   width: 100%;
-  background: var(--image-url) no-repeat center center;
-
+  background: var(--image-url) var(--default-color) no-repeat center center;
 }

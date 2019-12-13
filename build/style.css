@@ -313,11 +313,6 @@
 .form__label_width_default {
   width: 35%; }
 
-.form__control {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end; }
-
 .informer_border_all {
   border: 3px solid var(--border-color); }
 
@@ -572,10 +567,29 @@
 .image {
   border: 3px solid var(--border-color);
   width: 100%;
-  background: var(--image-url) no-repeat center center; }
+  background: var(--image-url) var(--default-color) no-repeat center center; }
 
 .e-accordion_visibility_hidden .e-accordion__more {
   display: none; }
 
 .e-accordion_visibility_showed .e-accordion__more {
   display: block; }
+
+.payment {
+  border: 3px solid var(--border-color); }
+  .payment .form__control {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; }
+
+.warning {
+  min-height: 335px; }
+  .warning .placeholder {
+    margin-bottom: var(--indent-m);
+    margin-top: var(--indent-m); }
+
+.product {
+  min-height: 300px;
+  border-width: 3px; }
+  .product .image {
+    height: 160px; }
