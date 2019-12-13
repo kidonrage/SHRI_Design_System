@@ -1,0 +1,13 @@
+.avatar {
+  background-color: var(--main);
+
+  &_size {
+
+    &_m {
+      width: 60px;
+      height: 60px;
+    }
+
+  }
+
+}
