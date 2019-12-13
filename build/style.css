@@ -644,8 +644,24 @@
   padding: var(--indent-xxxl) var(--gap); }
   .header__content {
     max-width: 1280px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
   .header__logo {
     background-color: var(--primary-text);
     width: 179px;
     height: 34px; }
+
+.onoffswitch {
+  width: 97px;
+  height: 32px;
+  border: 2px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 2px; }
+  .onoffswitch__button {
+    width: 24px;
+    height: 24px;
+    background-color: var(--border-color); }
