@@ -81,16 +81,16 @@
   &_view {
 
     &_primary {
-      @include wordColor(var(--primary));
+      @include wordColor(var(--primary-text));
     }
     &_secondary {
-      @include wordColor(var(--secondary));
+      @include wordColor(var(--secondary-text));
     }
     &_ghost {
-      @include wordColor(var(--extra));
+      @include wordColor(var(--extra-text));
     }
     &_link {
-      @include wordColor(var(--link));
+      @include wordColor(var(--link-text));
     }
 
   }

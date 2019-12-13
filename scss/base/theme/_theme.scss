@@ -1,60 +1,76 @@
+@mixin themeVariables(
+  $default-color,
+  $accent-color,
+  $border-color,
+  $primary-text,
+  $secondary-text,
+  $extra-text,
+  $link-text
+) {
+  /* Значения фонов блоков: */
+  --default-color: #{$default-color};
+  --accent-color: #{$accent-color};
+  --border-color: #{$border-color};
+
+  /* Значения состояний текста: */
+  --primary-text: #{$primary-text};
+  --secondary-text: #{$secondary-text};
+  --extra-text: #{$extra-text};
+  --link-text: #{$link-text};
+}
+
 .theme {
 
   /*--Цвета всех элементов интерфейса--*/
   &_color {
 
     &_project {
+
       &-default {
-        /* Значения фонов блоков: */
-        --default: #FFFFFF;
-        --accent: #ffcc00;
-        --border: #000000;
-
-        /* Значения состояний текста: */
-        --primary: #000000;
-        --secondary: rgba(0, 0, 0, 0.6);
-        --extra: rgba(0, 0, 0, 0.3);
-        --link: #0077ff;
+        @include themeVariables(
+          #FFFFFF, 
+          #ffcc00, 
+          #000000, 
+          #000000, 
+          rgba(0, 0, 0, 0.6), 
+          rgba(0, 0, 0, 0.3), 
+          #0077ff
+        )
       }
-
       &-brand {
-        /* Значения фонов блоков: */
-        --default: #0077ff;
-        --accent: #FFFFFF;
-        --border: #FFFFFF;
-      
-        /* Значения состояний текста: */
-        --primary: #FFFFFF;
-        --secondary: rgba(255, 255, 255, 0.6);
-        --extra: rgba(255, 255, 255, 0.3);
-        --link: #FFFFFF;
+        @include themeVariables(
+          #0077ff, 
+          #FFFFFF, 
+          #FFFFFF, 
+          #FFFFFF, 
+          rgba(255, 255, 255, 0.6), 
+          rgba(255, 255, 255, 0.3), 
+          #FFFFFF
+        )
       }
-
       &-inverse {
-        /* Значения фонов блоков: */
-        --default: #000000;
-        --accent: #FFFFFF;
-        --border: #FFFFFF;
-      
-        /* Значения состояний текста: */
-        --primary: #FFFFFF;
-        --secondary: rgba(255, 255, 255, 0.6);
-        --extra: rgba(255, 255, 255, 0.3);
-        --link: #0077ff;
+        @include themeVariables(
+          #000000, 
+          #FFFFFF, 
+          #FFFFFF, 
+          #FFFFFF, 
+          rgba(255, 255, 255, 0.6), 
+          rgba(255, 255, 255, 0.3), 
+          #0077ff
+        )
       }
-
       &-warning {
-        /* Значения фонов блоков: */
-        --default: #ff3333;
-        --accent: #FFFFFF;
-        --border: #ff3333;
-      
-        /* Значения состояний текста: */
-        --primary: #FFFFFF;
-        --secondary: rgba(255, 255, 255, 0.6);
-        --extra: rgba(255, 255, 255, 0.3);
-        --link: #FFF;
-      }      
+        @include themeVariables(
+          #ff3333, 
+          #FFFFFF, 
+          #ff3333, 
+          #FFFFFF, 
+          rgba(255, 255, 255, 0.6), 
+          rgba(255, 255, 255, 0.3), 
+          #FFFFFF
+        )
+      } 
+
     }
 
   }

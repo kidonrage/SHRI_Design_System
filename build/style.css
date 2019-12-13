@@ -8,44 +8,44 @@
   /*--Размеры отступов между элементами интерфейса--*/ }
   .theme_color_project-default {
     /* Значения фонов блоков: */
-    --default: #FFFFFF;
-    --accent: #ffcc00;
-    --border: #000000;
+    --default-color: #FFFFFF;
+    --accent-color: #ffcc00;
+    --border-color: #000000;
     /* Значения состояний текста: */
-    --primary: #000000;
-    --secondary: rgba(0, 0, 0, 0.6);
-    --extra: rgba(0, 0, 0, 0.3);
-    --link: #0077ff; }
+    --primary-text: #000000;
+    --secondary-text: rgba(0, 0, 0, 0.6);
+    --extra-text: rgba(0, 0, 0, 0.3);
+    --link-text: #0077ff; }
   .theme_color_project-brand {
     /* Значения фонов блоков: */
-    --default: #0077ff;
-    --accent: #FFFFFF;
-    --border: #FFFFFF;
+    --default-color: #0077ff;
+    --accent-color: #FFFFFF;
+    --border-color: #FFFFFF;
     /* Значения состояний текста: */
-    --primary: #FFFFFF;
-    --secondary: rgba(255, 255, 255, 0.6);
-    --extra: rgba(255, 255, 255, 0.3);
-    --link: #FFFFFF; }
+    --primary-text: #FFFFFF;
+    --secondary-text: rgba(255, 255, 255, 0.6);
+    --extra-text: rgba(255, 255, 255, 0.3);
+    --link-text: #FFFFFF; }
   .theme_color_project-inverse {
     /* Значения фонов блоков: */
-    --default: #000000;
-    --accent: #FFFFFF;
-    --border: #FFFFFF;
+    --default-color: #000000;
+    --accent-color: #FFFFFF;
+    --border-color: #FFFFFF;
     /* Значения состояний текста: */
-    --primary: #FFFFFF;
-    --secondary: rgba(255, 255, 255, 0.6);
-    --extra: rgba(255, 255, 255, 0.3);
-    --link: #0077ff; }
+    --primary-text: #FFFFFF;
+    --secondary-text: rgba(255, 255, 255, 0.6);
+    --extra-text: rgba(255, 255, 255, 0.3);
+    --link-text: #0077ff; }
   .theme_color_project-warning {
     /* Значения фонов блоков: */
-    --default: #ff3333;
-    --accent: #FFFFFF;
-    --border: #ff3333;
+    --default-color: #ff3333;
+    --accent-color: #FFFFFF;
+    --border-color: #ff3333;
     /* Значения состояний текста: */
-    --primary: #FFFFFF;
-    --secondary: rgba(255, 255, 255, 0.6);
-    --extra: rgba(255, 255, 255, 0.3);
-    --link: #FFF; }
+    --primary-text: #FFFFFF;
+    --secondary-text: rgba(255, 255, 255, 0.6);
+    --extra-text: rgba(255, 255, 255, 0.3);
+    --link-text: #FFFFFF; }
   .theme_size_default {
     /* Значения размеров высоты текста (так как в задании текст в виде линий) */
     --text-height-s: 8px;
@@ -131,9 +131,9 @@
 .card {
   position: relative; }
   .card_border_all {
-    border: 3px solid var(--border); }
+    border: 3px solid var(--border-color); }
   .card_view_default {
-    background-color: var(--default); }
+    background-color: var(--default-color); }
   .card__content {
     display: flex;
     flex-flow: column; }
@@ -178,13 +178,13 @@
       padding: var(--indent-xxxl); }
 
 .form_border_all {
-  border: 3px solid var(--border); }
+  border: 3px solid var(--border-color); }
 
 .form_view_default {
-  background-color: var(--default); }
+  background-color: var(--default-color); }
 
 .form__item_border_bottom {
-  border-bottom: 3px solid var(--border); }
+  border-bottom: 3px solid var(--border-color); }
 
 .form__item_distribute_between {
   display: flex;
@@ -311,10 +311,10 @@
   justify-content: flex-end; }
 
 .informer_border_all {
-  border: 3px solid var(--border); }
+  border: 3px solid var(--border-color); }
 
 .informer_view_default {
-  background-color: var(--default); }
+  background-color: var(--default-color); }
 
 .informer__content, .informer__action {
   display: flex;
@@ -329,16 +329,16 @@
     padding: var(--indent-xxl); }
 
 .list_border_all {
-  border: 3px solid var(--border); }
+  border: 3px solid var(--border-color); }
 
 .list_view_default {
-  background-color: var(--default); }
+  background-color: var(--default-color); }
 
 .list__item_border_bottom {
-  border-bottom: 3px solid var(--border); }
+  border-bottom: 3px solid var(--border-color); }
 
 .list__item_border_top {
-  border-top: 3px solid var(--border); }
+  border-top: 3px solid var(--border-color); }
 
 .list__item_distribute_between {
   justify-content: space-between; }
@@ -471,19 +471,19 @@
   margin: 15px 0 21px; }
 
 .text_view_primary .text__word {
-  background-color: var(--primary); }
+  background-color: var(--primary-text); }
 
 .text_view_secondary .text__word {
-  background-color: var(--secondary); }
+  background-color: var(--secondary-text); }
 
 .text_view_ghost .text__word {
-  background-color: var(--extra); }
+  background-color: var(--extra-text); }
 
 .text_view_link .text__word {
-  background-color: var(--link); }
+  background-color: var(--link-text); }
 
 .avatar {
-  background-color: var(--primary); }
+  background-color: var(--primary-text); }
   .avatar_size_m {
     width: 60px;
     height: 60px; }
@@ -525,10 +525,10 @@
   height: 72px; }
 
 .placeholder_view_primary {
-  background-color: var(--primary); }
+  background-color: var(--primary-text); }
 
 .button {
-  background-color: var(--accent); }
+  background-color: var(--accent-color); }
   .button_size_s {
     height: 24px;
     width: 200px; }
@@ -548,7 +548,7 @@
     width: 100%; }
 
 .input {
-  border: 3px solid var(--border);
+  border: 3px solid var(--border-color);
   width: 100%; }
   .input_size_s {
     height: 24px; }
@@ -562,6 +562,6 @@
     height: 64px; }
 
 .image {
-  border: 3px solid var(--border);
+  border: 3px solid var(--border-color);
   width: 100%;
   background-image: url(); }

@@ -4,7 +4,7 @@
   &_border {
 
     &_all {
-      border: 3px solid var(--border);
+      border: 3px solid var(--border-color);
     }
 
   }
@@ -12,7 +12,7 @@
   &_view {
 
     &_default {
-      background-color: var(--default);
+      background-color: var(--default-color);
     }
 
   }
