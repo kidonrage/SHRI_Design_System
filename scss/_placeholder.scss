@@ -1,0 +1,24 @@
+@mixin placeholderSize($size) {
+  width: $size;
+  height: $size;
+}
+
+.placeholder {
+
+  &_size {
+
+    &_m {
+      @include placeholderSize(72px);
+    }
+
+  }
+
+  &_view {
+
+    &_primary {
+      background-color: var(--primary);
+    }
+
+  }
+
+}

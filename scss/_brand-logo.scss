@@ -1,0 +1,45 @@
+@mixin avatarSize($size) {
+  width: $size;
+  height: $size;
+}
+
+.brand-logo {
+
+  &_name {
+
+    &_blue {
+      background-color: #5dcdf9;
+    }
+    &_green {
+      background-color: #23b324;
+    }
+    &_red {
+      background-color: #ff3333;
+    }
+    &_purple {
+      background-color: #c62cff;
+    }
+
+  }
+
+  &_size {
+
+    &_xxs {
+      @include avatarSize(24px);
+    }
+    &_xs {
+      @include avatarSize(32px);
+    }
+    &_s {
+      @include avatarSize(40px);
+    }
+    &_m {
+      @include avatarSize(60px);
+    }
+    &_l {
+      @include avatarSize(80px);
+    }
+
+  }
+
+}

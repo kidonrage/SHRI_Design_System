@@ -77,7 +77,7 @@
   &_view {
 
     &_primary {
-      @include wordColor(var(--main));
+      @include wordColor(var(--primary));
     }
     &_secondary {
       @include wordColor(var(--secondary));
