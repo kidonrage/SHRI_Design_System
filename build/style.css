@@ -626,3 +626,16 @@
     height: 180px; }
   .cover__preview {
     margin-bottom: var(--indent-l); }
+
+.event {
+  min-height: 400px; }
+  .event__preview {
+    margin-bottom: var(--indent-xxl);
+    display: flex;
+    align-items: center; }
+    .event__preview > div {
+      margin-right: var(--indent-xs); }
+      .event__preview > div:last-child {
+        margin-right: 0; }
+  .event__title {
+    margin-bottom: var(--indent-s); }

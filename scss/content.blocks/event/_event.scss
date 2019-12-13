@@ -1,0 +1,22 @@
+.event {
+  min-height: 400px;
+
+  &__preview {
+    margin-bottom: var(--indent-xxl);
+    display: flex;
+    align-items: center;
+
+    >div {
+      margin-right: var(--indent-xs);
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: var(--indent-s);
+  }
+
+}
