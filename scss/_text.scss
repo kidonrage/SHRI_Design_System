@@ -1,0 +1,91 @@
+@mixin wordModificators($s, $m, $l, $height) {
+  .text__word {
+    height: $height;
+
+    &_width {
+
+      &_s {
+        width: $s;
+      }
+      &_m {
+        width: $m;
+      }
+      &_l {
+        width: $l;
+      }
+
+    }
+
+  }
+}
+
+.text {
+
+  &_align {
+
+    &_center {
+      text-align: center;
+    }
+
+  }
+
+  &_size {
+
+    &_s {
+      height: var(--text-height-s);
+      @include wordModificators(20px, 48px, 100px, 8px)
+    }
+    &_m {
+      height: var(--text-height-m);
+      @include wordModificators(24px, 56px, 114px, 10px)
+    }
+    &_l {
+      height: var(--text-height-l);
+      @include wordModificators(28px, 68px, 138px, 11px)
+    }
+    &_xl {
+      height: var(--text-height-xl);
+      @include wordModificators(32px, 74px, 154px, 13px)
+    }
+    &_xxl {
+      height: var(--text-height-xxl);
+      @include wordModificators(36px, 88px, 184px, 16px)
+    }
+
+  }
+
+  &_type {
+
+    &_h1 {
+      margin: 18px 0 24px;
+    }
+    &_h2 {
+      margin: 45px 0 21px;
+    }
+    &_h3 {
+      margin: 42px 0 0;
+    }
+    &_p {
+      margin: 15px 0 21px;
+    }
+
+  }
+
+  &_view {
+
+    &_primary {
+      background-color: var(--main);
+    }
+    &_secondary {
+      background-color: var(--secondary);
+    }
+    &_ghost {
+      background-color: var(--extra);
+    }
+    &_link {
+      background-color: var(--link);
+    }
+
+  }
+
+}
