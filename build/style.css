@@ -639,3 +639,13 @@
         margin-right: 0; }
   .event__title {
     margin-bottom: var(--indent-s); }
+
+.header {
+  padding: var(--indent-xxxl) var(--gap); }
+  .header__content {
+    max-width: 1280px;
+    margin: 0 auto; }
+  .header__logo {
+    background-color: var(--primary-text);
+    width: 179px;
+    height: 34px; }

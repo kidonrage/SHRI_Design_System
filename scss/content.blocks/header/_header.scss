@@ -1,0 +1,16 @@
+.header {
+  padding: var(--indent-xxxl) var(--gap);
+
+  &__content {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  &__logo {
+    background-color: var(--primary-text);
+    width: 179px;
+    height: 34px;
+  }
+
+
+}
