@@ -19,7 +19,6 @@
 
 
   &__item {
-    display: flex;
 
     &_border {
 
@@ -32,6 +31,7 @@
     &_distribute {
 
       &_between {
+        display: flex;
         justify-content: space-between;
       }
 
@@ -40,6 +40,7 @@
     &_vertical-align {
 
       &_center {
+        display: flex;
         align-items: center;
       }
 
@@ -170,6 +171,11 @@
     &__space-v {
       border-bottom: none;
     }
+
+
+    &:last-child {
+      margin-bottom: 0;
+    }
     
   }
 
@@ -187,7 +193,9 @@
 
   &__control {
 
-    
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
     
   }
 
