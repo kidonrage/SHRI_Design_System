@@ -1,0 +1,27 @@
+.history {
+  border-width: 3px;
+
+  &__show {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0;
+  }
+
+  &__details {
+    display: flex;
+    align-items: center;
+  }
+
+  &__destination {
+    display: flex;
+    align-items: center;
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+}

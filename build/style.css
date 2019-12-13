@@ -337,6 +337,10 @@
 .list_view_default {
   background-color: var(--default-color); }
 
+.list__item:last-child {
+  border-bottom: none;
+  margin-bottom: 0; }
+
 .list__item_border_bottom {
   border-bottom: 3px solid var(--border-color); }
 
@@ -593,3 +597,22 @@
   border-width: 3px; }
   .product .image {
     height: 160px; }
+
+.history__show {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0; }
+
+.history__details {
+  display: flex;
+  align-items: center; }
+
+.history__destination {
+  display: flex;
+  align-items: center; }
+
+.history__actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
