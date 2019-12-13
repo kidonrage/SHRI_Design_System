@@ -15,7 +15,9 @@
     --primary-text: #000000;
     --secondary-text: rgba(0, 0, 0, 0.6);
     --extra-text: rgba(0, 0, 0, 0.3);
-    --link-text: #0077ff; }
+    --link-text: #0077ff;
+    /* Изображение для заглушки: */
+    --image-url: url("/static/img/image-placeholder-primary.svg"); }
   .theme_color_project-brand {
     /* Значения фонов блоков: */
     --default-color: #0077ff;
@@ -25,7 +27,9 @@
     --primary-text: #FFFFFF;
     --secondary-text: rgba(255, 255, 255, 0.6);
     --extra-text: rgba(255, 255, 255, 0.3);
-    --link-text: #FFFFFF; }
+    --link-text: #FFFFFF;
+    /* Изображение для заглушки: */
+    --image-url: url("/static/img/image-placeholder-inverse.svg"); }
   .theme_color_project-inverse {
     /* Значения фонов блоков: */
     --default-color: #000000;
@@ -35,7 +39,9 @@
     --primary-text: #FFFFFF;
     --secondary-text: rgba(255, 255, 255, 0.6);
     --extra-text: rgba(255, 255, 255, 0.3);
-    --link-text: #0077ff; }
+    --link-text: #0077ff;
+    /* Изображение для заглушки: */
+    --image-url: url("/static/img/image-placeholder-inverse.svg"); }
   .theme_color_project-warning {
     /* Значения фонов блоков: */
     --default-color: #ff3333;
@@ -45,7 +51,9 @@
     --primary-text: #FFFFFF;
     --secondary-text: rgba(255, 255, 255, 0.6);
     --extra-text: rgba(255, 255, 255, 0.3);
-    --link-text: #FFFFFF; }
+    --link-text: #FFFFFF;
+    /* Изображение для заглушки: */
+    --image-url: url("/static/img/image-placeholder-primary.svg"); }
   .theme_size_default {
     /* Значения размеров высоты текста (так как в задании текст в виде линий) */
     --text-height-s: 8px;
@@ -564,4 +572,10 @@
 .image {
   border: 3px solid var(--border-color);
   width: 100%;
-  background-image: url(); }
+  background: var(--image-url) no-repeat center center; }
+
+.e-accordion_visibility_hidden .e-accordion__more {
+  display: none; }
+
+.e-accordion_visibility_showed .e-accordion__more {
+  display: block; }

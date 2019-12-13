@@ -1,0 +1,24 @@
+.e-accordion {
+
+  &_visibility {
+
+    &_hidden {
+      .e-accordion__more {
+        display: none;
+      }
+    }
+    &_showed {
+      .e-accordion__more {
+        display: block;
+      }
+    }
+    
+  }
+
+  &__short {
+
+    
+
+  }
+
+}
