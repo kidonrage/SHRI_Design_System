@@ -8,20 +8,21 @@
     &_xxxxl {
       margin-bottom: var(--indent-xxxxl);
     }
+
+  }
     
 
-    &_space-v {
+  &_space-v {
 
-      &_xxl {
-        padding-top: var(--indent-xxl);
-        padding-bottom: var(--indent-xxl);
-      }
-      &_xxxxl {
-        padding-top: var(--indent-xxxxl);
-        padding-bottom: var(--indent-xxxxl);
-      }
-
+    &_xxl {
+      padding-top: var(--indent-xxl);
+      padding-bottom: var(--indent-xxl);
     }
+    &_xxxxl {
+      padding-top: var(--indent-xxxxl);
+      padding-bottom: var(--indent-xxxxl);
+    }
+
   }
 
 }
