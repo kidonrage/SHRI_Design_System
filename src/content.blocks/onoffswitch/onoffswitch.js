@@ -1,4 +1,4 @@
-let onoffswitch = document.querySelectorAll('.onoffswitch');
+let onoffswitch = document.querySelector('.onoffswitch');
 
 onoffswitch.addEventListener('click', function() {
   let theme = document.querySelector('.theme');

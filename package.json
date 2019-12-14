@@ -3,15 +3,30 @@
   "version": "1.0.0",
   "description": "Project stub for BEMJSON render",
   "main": "index.js",
+  "watch": {
+    "concat-js": {
+      "patterns": [
+        "src"
+      ],
+      "extensions": "js",
+      "quiet": false
+    }
+  },
   "scripts": {
-    "watch-scss": "",
-    "start": "node-sass scss --watch --recursive --output build & node index.js"
+    "build-css": "postcss build/style.css --use autoprefixer -b 'last 2 versions' --no-map -o build/style.css",
+    "concat-js": "concat-glob-cli -f src/**/*.js -o build/script.js",
+    "watch": "npm-watch",
+    "start": "node-sass src --watch --recursive --output build & npm run watch & node index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "autoprefixer": "^9.7.3",
     "bem-xjst": "^8.9.6",
+    "concat-glob-cli": "^0.1.0",
     "express": "^4.17.1",
-    "node-sass": "^4.13.0"
+    "node-sass": "^4.13.0",
+    "npm-watch": "^0.6.0",
+    "postcss-cli": "^6.1.3"
   }
 }
