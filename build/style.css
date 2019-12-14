@@ -3,6 +3,7 @@
   box-sizing: border-box; }
 
 .theme {
+  background-color: var(--default-color);
   /*--Цвета всех элементов интерфейса--*/
   /*--Размеры типографических величин--*/
   /*--Размеры отступов между элементами интерфейса--*/ }
@@ -659,9 +660,20 @@
   border: 2px solid var(--border-color);
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
   padding: 2px; }
+  .onoffswitch_checked {
+    justify-content: flex-end; }
   .onoffswitch__button {
     width: 24px;
     height: 24px;
     background-color: var(--border-color); }
+
+.footer {
+  padding: var(--indent-xxxl) var(--gap); }
+  .footer__content {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
