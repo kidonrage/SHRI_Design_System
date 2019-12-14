@@ -142,6 +142,9 @@
     grid-column: span 5; }
   .grid__fraction_m-col_8 {
     grid-column: span 8; }
+  @media (max-width: 1024px) {
+    .grid__fraction {
+      grid-column: 1/-1; } }
 
 .card {
   position: relative; }
@@ -611,11 +614,11 @@
   width: 100%;
   background: var(--image-url) var(--default-color) no-repeat center center; }
 
-.e-accordion_visibility_hidden .e-accordion__more {
-  display: none; }
-
-.e-accordion_visibility_showed .e-accordion__more {
+.e-accordion__expanded .e-accordion__more {
   display: block; }
+
+.e-accordion__more {
+  display: none; }
 
 .payment {
   border: 3px solid var(--border-color); }

@@ -1,4 +1,3 @@
-
 document.body.addEventListener('click', function(e) {
   let onoffswitch = event.target.closest('.onoffswitch');
   if (onoffswitch) {

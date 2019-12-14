@@ -1,18 +1,15 @@
 .e-accordion {
 
-  &_visibility {
+  &__expanded {
 
-    &_hidden {
-      .e-accordion__more {
-        display: none;
-      }
-    }
-    &_showed {
-      .e-accordion__more {
-        display: block;
-      }
+    .e-accordion__more {
+      display: block;
     }
     
+  }
+
+  &__more {
+    display: none;
   }
 
   &__short {
