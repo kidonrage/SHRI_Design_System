@@ -1,21 +1,25 @@
-document.body.addEventListener('click', function(e) {
-  let onoffswitch = event.target.closest('.onoffswitch');
-  if (onoffswitch) {
-    let theme = document.querySelector('.theme');
-    theme.classList.toggle("theme_color_project-default");
-    theme.classList.toggle("theme_color_project-inverse");
+window.addEventListener('DOMContentLoaded', function() {
 
-    onoffswitch.classList.toggle('onoffswitch_checked')
+  document.body.addEventListener('click', function(e) {
+    let onoffswitch = event.target.closest('.onoffswitch');
+    if (onoffswitch) {
+      let theme = document.querySelector('.theme');
+      theme.classList.toggle("theme_color_project-default");
+      theme.classList.toggle("theme_color_project-inverse");
 
-    return;
-  }
+      onoffswitch.classList.toggle('onoffswitch_checked')
 
-  let accordionToggle = event.target.closest('.e-accordion__short');
-  if (accordionToggle) {
-    let accordion = accordionToggle.closest('.e-accordion');
+      return;
+    }
 
-    accordion.classList.toggle("e-accordion__expanded");
+    let accordionToggle = event.target.closest('.e-accordion__short');
+    if (accordionToggle) {
+      let accordion = accordionToggle.closest('.e-accordion');
 
-    return;
-  }
+      accordion.classList.toggle("e-accordion__expanded");
+
+      return;
+    }
+  });
+
 });
