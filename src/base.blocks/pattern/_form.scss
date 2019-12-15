@@ -158,13 +158,6 @@
         padding-bottom: var(--indent-xxxxl);
       }
 
-      .form__item & {
-        &[class^=form__item_border] {
-          border-bottom: none;
-        }
-      }
-
-
     }
 
     

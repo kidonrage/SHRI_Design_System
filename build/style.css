@@ -309,9 +309,6 @@
   padding-top: var(--indent-xxxxl);
   padding-bottom: var(--indent-xxxxl); }
 
-.form__item .form__item_space-v[class^=form__item_border] {
-  border-bottom: none; }
-
 .form__item__space-v {
   border-bottom: none; }
 
@@ -593,6 +590,8 @@
     width: 100%;
     display: flex;
     justify-content: flex-end; }
+  .payment .form__label {
+    flex-shrink: 0; }
 
 .warning {
   min-height: 335px; }
