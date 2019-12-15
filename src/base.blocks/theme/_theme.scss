@@ -20,7 +20,7 @@
   --link-text: #{$link-text};
 
   /* Изображение для заглушки: */
-  --image-url: url("./img/#{$img-name}");
+  --image-url: url("#{$img-name}");
   // --test-image: url('/static/img/image-placeholder-primary.svg');
 }
 
