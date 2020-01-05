@@ -2,6 +2,7 @@
   .text__word {
     display: inline-block;
     height: $height;
+    max-width: 100%;
 
     &_width {
 

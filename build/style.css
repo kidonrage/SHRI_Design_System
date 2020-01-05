@@ -2,6 +2,9 @@
 * {
   box-sizing: border-box; }
 
+body {
+  min-width: 480px; }
+
 .theme {
   background-color: var(--default-color);
   /*--Цвета всех элементов интерфейса--*/
@@ -465,7 +468,8 @@
   line-height: var(--line-height-s); }
   .text_size_s .text__word {
     display: inline-block;
-    height: 8px; }
+    height: 8px;
+    max-width: 100%; }
     .text_size_s .text__word_width_s {
       width: 20px; }
     .text_size_s .text__word_width_m {
@@ -477,7 +481,8 @@
   line-height: var(--line-height-m); }
   .text_size_m .text__word {
     display: inline-block;
-    height: 10px; }
+    height: 10px;
+    max-width: 100%; }
     .text_size_m .text__word_width_s {
       width: 24px; }
     .text_size_m .text__word_width_m {
@@ -489,7 +494,8 @@
   line-height: var(--line-height-l); }
   .text_size_l .text__word {
     display: inline-block;
-    height: 11px; }
+    height: 11px;
+    max-width: 100%; }
     .text_size_l .text__word_width_s {
       width: 28px; }
     .text_size_l .text__word_width_m {
@@ -501,7 +507,8 @@
   line-height: var(--line-height-xl); }
   .text_size_xl .text__word {
     display: inline-block;
-    height: 13px; }
+    height: 13px;
+    max-width: 100%; }
     .text_size_xl .text__word_width_s {
       width: 32px; }
     .text_size_xl .text__word_width_m {
@@ -513,7 +520,8 @@
   line-height: var(--line-height-xxl); }
   .text_size_xxl .text__word {
     display: inline-block;
-    height: 16px; }
+    height: 16px;
+    max-width: 100%; }
     .text_size_xxl .text__word_width_s {
       width: 36px; }
     .text_size_xxl .text__word_width_m {
@@ -640,7 +648,7 @@
 .payment {
   border: 3px solid var(--border-color); }
   .payment .form__control {
-    width: 100%;
+    width: 65%;
     display: -webkit-box;
     display: flex;
     -webkit-box-pack: end;
