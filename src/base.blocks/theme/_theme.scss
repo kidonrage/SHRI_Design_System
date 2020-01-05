@@ -20,8 +20,14 @@
   --link-text: #{$link-text};
 
   /* Изображение для заглушки: */
-  --image-url: url("#{$img-name}");
-  // --test-image: url('/static/img/image-placeholder-primary.svg');
+  .image {
+    background-image: url('#{$img-name}');
+  }
+
+  // Селектор-костыль, для корректного вывода изображений в блоках с вложенными классами тем
+  >div.image {
+    background-image: url('#{$img-name}');
+  }
 }
 
 .theme {
@@ -41,7 +47,7 @@
           rgba(0, 0, 0, 0.6), 
           rgba(0, 0, 0, 0.3), 
           #0077ff,
-          "image-placeholder-primary.svg"
+          "./image-placeholder-primary.svg"
         )
       }
       &-brand {
@@ -53,7 +59,7 @@
           rgba(255, 255, 255, 0.6), 
           rgba(255, 255, 255, 0.3), 
           #FFFFFF,
-          "image-placeholder-inverse.svg"
+          "./image-placeholder-inverse.svg"
         )
       }
       &-inverse {
@@ -65,7 +71,7 @@
           rgba(255, 255, 255, 0.6), 
           rgba(255, 255, 255, 0.3), 
           #0077ff,
-          "image-placeholder-inverse.svg"
+          "./image-placeholder-inverse.svg"
         )
       }
       &-warning {
@@ -77,7 +83,7 @@
           rgba(255, 255, 255, 0.6), 
           rgba(255, 255, 255, 0.3), 
           #FFFFFF,
-          "image-placeholder-primary.svg"
+          "./image-placeholder-primary.svg"
         )
       } 
 
