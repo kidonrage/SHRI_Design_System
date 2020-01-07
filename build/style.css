@@ -584,7 +584,7 @@ body {
     height: 64px; }
 
 .image {
-  border: 3px solid var(--border-color);
+  border: 3px solid var(--default-color);
   width: 100%;
   display: flex;
   align-items: center;
@@ -646,7 +646,8 @@ body {
 .cover {
   min-height: 472px; }
   .cover .image {
-    height: 180px; }
+    height: 180px;
+    border-color: var(--border-color); }
   .cover__preview {
     margin-bottom: var(--indent-l); }
 
