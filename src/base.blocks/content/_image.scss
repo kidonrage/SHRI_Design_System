@@ -1,7 +1,15 @@
 .image {
   border: 3px solid var(--border-color);
   width: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: var(--default-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .primary {
+    display: var(--primary-display);
+  }
+
+  .inversed {
+    display: var(--inversed-display);
+  }
 }

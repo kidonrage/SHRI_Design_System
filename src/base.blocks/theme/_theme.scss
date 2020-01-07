@@ -6,7 +6,7 @@
   $secondary-text,
   $extra-text,
   $link-text,
-  $img-name
+  $isImgInversed: false
 ) {
   /* Значения фонов блоков: */
   --default-color: #{$default-color};
@@ -19,14 +19,12 @@
   --extra-text: #{$extra-text};
   --link-text: #{$link-text};
 
-  /* Изображение для заглушки: */
-  .image {
-    background-image: url('#{$img-name}');
-  }
-
-  // Селектор-костыль, для корректного вывода изображений в блоках с вложенными классами тем
-  >div.image {
-    background-image: url('#{$img-name}');
+  @if $isImgInversed {
+    --inversed-display: block;
+    --primary-display: none;
+  } @else {
+    --inversed-display: none;
+    --primary-display: block;
   }
 }
 
@@ -46,8 +44,7 @@
           #000000, 
           rgba(0, 0, 0, 0.6), 
           rgba(0, 0, 0, 0.3), 
-          #0077ff,
-          "./image-placeholder-primary.svg"
+          #0077ff
         )
       }
       &-brand {
@@ -59,7 +56,7 @@
           rgba(255, 255, 255, 0.6), 
           rgba(255, 255, 255, 0.3), 
           #FFFFFF,
-          "./image-placeholder-inverse.svg"
+          $isImgInversed: true
         )
       }
       &-inverse {
@@ -71,7 +68,7 @@
           rgba(255, 255, 255, 0.6), 
           rgba(255, 255, 255, 0.3), 
           #0077ff,
-          "./image-placeholder-inverse.svg"
+          $isImgInversed: true
         )
       }
       &-warning {
@@ -82,8 +79,7 @@
           #FFFFFF, 
           rgba(255, 255, 255, 0.6), 
           rgba(255, 255, 255, 0.3), 
-          #FFFFFF,
-          "./image-placeholder-primary.svg"
+          #FFFFFF
         )
       } 
 
