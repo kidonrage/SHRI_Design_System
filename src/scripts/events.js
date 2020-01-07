@@ -1,14 +1,4 @@
-
-
-
-window.addEventListener('DOMContentLoaded', function() {
-
-  let images = document.querySelectorAll('.image');
-  images.forEach((image) => {
-    image.innerHTML = primaryImage + inversedImage;
-  });
-  
-
+function addClickListeners() {
   document.body.addEventListener('click', function(e) {
     let onoffswitch = event.target.closest('.onoffswitch');
     if (onoffswitch) {
@@ -30,5 +20,8 @@ window.addEventListener('DOMContentLoaded', function() {
       return;
     }
   });
+}
 
-});
+module.exports = {
+  addClickListeners
+}
