@@ -1,32 +1,4 @@
 (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
-function addClickListeners() {
-  document.body.addEventListener('click', function(e) {
-    let onoffswitch = event.target.closest('.onoffswitch');
-    if (onoffswitch) {
-      let theme = document.querySelector('.theme');
-      theme.classList.toggle("theme_color_project-default");
-      theme.classList.toggle("theme_color_project-inverse");
-
-      onoffswitch.classList.toggle('onoffswitch_checked')
-
-      return;
-    }
-
-    let accordionToggle = event.target.closest('.e-accordion__short');
-    if (accordionToggle) {
-      let accordion = accordionToggle.closest('.e-accordion');
-
-      accordion.classList.toggle("e-accordion__expanded");
-
-      return;
-    }
-  });
-}
-
-module.exports = {
-  addClickListeners
-}
-},{}],2:[function(require,module,exports){
 const primaryImage = `<svg class="primary" width="80px" height="64px" viewBox="0 0 80 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <title>placeholder</title>
   <desc>Created with Sketch.</desc>
@@ -64,12 +36,40 @@ function insertImages() {
 module.exports = {
   insertImages
 }
+},{}],2:[function(require,module,exports){
+function addClickListeners() {
+  document.body.addEventListener('click', function(e) {
+    let onoffswitch = event.target.closest('.onoffswitch');
+    if (onoffswitch) {
+      let theme = document.querySelector('.theme');
+      theme.classList.toggle("theme_color_project-default");
+      theme.classList.toggle("theme_color_project-inverse");
+
+      onoffswitch.classList.toggle('onoffswitch_checked')
+
+      return;
+    }
+
+    let accordionToggle = event.target.closest('.e-accordion__short');
+    if (accordionToggle) {
+      let accordion = accordionToggle.closest('.e-accordion');
+
+      accordion.classList.toggle("e-accordion__expanded");
+
+      return;
+    }
+  });
+}
+
+module.exports = {
+  addClickListeners
+}
 },{}],3:[function(require,module,exports){
-const {insertImages} = require('./images');
+const {insertImages} = require('../base.blocks/content/image/images');
 const {addClickListeners} = require('./events');
 
 window.addEventListener('DOMContentLoaded', function() {
   insertImages();
   addClickListeners();
 });
-},{"./events":1,"./images":2}]},{},[3]);
+},{"../base.blocks/content/image/images":1,"./events":2}]},{},[3]);
