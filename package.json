@@ -13,8 +13,9 @@
     }
   },
   "scripts": {
-    "build-css": "postcss build/style.css --use autoprefixer -b 'last 2 versions' --no-map -o build/style.css",
-    "concat-js": "browserify src/scripts/index.js -o build/script.js",
+    "build:css": "postcss build/style.css --use autoprefixer -b 'last 2 versions' --no-map -o build/style.css",
+    "build:js": "browserify src/scripts/index.js -o build/script.js",
+    "build": "npm run build:css && npm run build:js",
     "watch": "npm-watch",
     "start": "node-sass src --watch --recursive --output build & npm run watch & node index.js"
   },
